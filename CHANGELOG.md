@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] - ReleaseDate
 
+## [0.1.2] - 2026-01-12
+
 - Fixed: disabling the `std` feature flag now marks the crate as `no_std`
 
 # [0.1.1] - 2024-02-27
