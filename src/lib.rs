@@ -95,6 +95,7 @@
 //! [generic types]: https://doc.rust-lang.org/core/fmt/trait.Display.html#generic-type-parameters
 #![doc(html_root_url = "https://docs.rs/docsplay/0.1.0")]
 #![cfg_attr(docsrs, feature(doc_cfg))]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 pub use docsplay_macros::Display;
 
