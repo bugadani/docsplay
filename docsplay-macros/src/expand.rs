@@ -365,7 +365,7 @@ fn impl_enum(input: &DeriveInput, data: &DataEnum) -> Result<TokenStream> {
                 fn fmt(&self, formatter: &mut ::core::fmt::Formatter) -> ::core::fmt::Result {
                     #import
 
-                    #[allow(unused_variables)]
+                    #[allow(unused_variables, unused_assignments)]
                     match self {
                         #(#arms,)*
                     }
