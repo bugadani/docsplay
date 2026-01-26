@@ -84,13 +84,13 @@ assert!("oh no, an error: muahaha i am an error" == &format!("{}", error));
 ### FAQ
 
 1. **Is this crate `no_std` compatible?**
-    * Yes! This crate implements the [`core::fmt::Display`] trait, not the [`std::fmt::Display`] trait, so it should work in `std` and `no_std` environments. Just add `default-features = false`.
+   Yes! This crate implements the [`core::fmt::Display`] trait, not the [`std::fmt::Display`] trait, so it should work in `std` and `no_std` environments. Just add `default-features = false`.
 
 2. **Does this crate work with `Path` and `PathBuf` via the `Display` trait?**
-    * Yuuup. This crate uses @dtolnay's [autoref specialization technique](https://github.com/dtolnay/case-studies/blob/master/autoref-specialization/README.md)
-to add a special trait for types to get the display impl. It then specializes for `Path` and
-`PathBuf`, and when either of these types are found, it calls `self.display()` to get a
-`std::path::Display<'_>` type which can be used with the `Display` format specifier!
+   Yuuup. This crate uses @dtolnay's [autoref specialization technique](https://github.com/dtolnay/case-studies/blob/master/autoref-specialization/README.md)
+   to add a special trait for types to get the display impl. It then specializes for `Path` and
+   `PathBuf`, and when either of these types are found, it calls `self.display()` to get a
+   `std::path::Display<'_>` type which can be used with the `Display` format specifier!
 
 [`core::fmt::Display`]: https://doc.rust-lang.org/core/fmt/trait.Display.html
 [`std::fmt::Display`]: https://doc.rust-lang.org/std/fmt/trait.Display.html
