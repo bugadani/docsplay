@@ -1,6 +1,7 @@
 [package]
 name = "docsplay-macros"
 version = "0.1.1"
+rust-version = "1.56"
 authors = ["Dániel Buga <bugadani@gmail.com>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
