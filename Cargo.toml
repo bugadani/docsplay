@@ -1,6 +1,6 @@
 [package]
 name = "docsplay"
-version = "0.1.2"
+version = "0.1.3"
 rust-version = "1.56"
 authors = ["Dániel Buga <bugadani@gmail.com>"]
 edition = "2021"
@@ -19,7 +19,7 @@ default = ["std"]
 std = ["docsplay-macros/std"]
 
 [dependencies]
-docsplay-macros = { version = "0.1.1", path = "docsplay-macros" }
+docsplay-macros = { version = "0.1.2", path = "docsplay-macros" }
 
 [dev-dependencies]
 trybuild = "1.0"
